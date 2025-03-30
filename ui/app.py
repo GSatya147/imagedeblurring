@@ -16,7 +16,7 @@ model = Generator()
 model.load_state_dict(torch.load("./models/DeblurGAN_epoch_45.pth", map_location="cpu"))
 model.eval()
 
-st.title("DeblurGAN - Image Deblurring")
+st.title("Image Deblurring using GAN")
 
 # Drag and drop file uploader
 uploaded_file = st.file_uploader("Upload a blurred image", type=["png", "jpg", "jpeg"])
